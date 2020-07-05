@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "WorkFlowy RTL",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Makes WorkFlowy Right to Left (useful for RTL languages such as Hebrew)",
+    "description": "The description of the application"
+  }
+}

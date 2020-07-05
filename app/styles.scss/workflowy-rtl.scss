@@ -1,0 +1,129 @@
+/***************************************************************
+                      WorkFlowy RTL
+        RIGHT TO LEFT support for RTL languages (hebrew)
+
+              Contributers: Elron Bucai from Israel
+                            Maybe You from Country
+***************************************************************/
+
+html {
+  direction: rtl;
+}
+
+html {
+  .page {
+    margin: 0 auto;
+    transform: none !important;
+  }
+
+  .selected .project>.name {
+    margin-left: 0px;
+    margin-right: -50px;
+    padding: 0 75px 0 0;
+  }
+
+  .children {
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 10px;
+    padding-right: 15px;
+  }
+
+  .bullet {
+    right: 50px;
+    margin-right: 1px;
+    left: initial;
+    margin-left: 0;
+  }
+
+  .controls>a {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+  #controls #expandButton {
+    left: initial;
+    right: 30px;
+  }
+
+  #keyboardShortcutHelper {
+    right: initial;
+    left: 10px;
+  }
+
+  .parent>.name {
+    float: right;
+  }
+
+  .pageControls {
+    position: absolute;
+    right: 0px;
+    left: 10px;
+  }
+
+  .moreControlsButton {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .pageStar {
+    float: left;
+  }
+}
+
+.rtl-popup>div {
+  // max-width: 700px;
+  // margin: 0 auto;
+  // position: relative;
+}
+
+.rtl-popup>div>div {
+  // right: 0;
+  margin-left: 700px;
+  margin-top: -13px;
+  transform: translateX(-100%);
+}
+
+.menu div:nth-child(n+2) {
+  left: initial !important;
+  transform: scale(1) !important;
+  right: 0 !important;
+}
+
+.menu.rtl-options-menu div:nth-child(n+2) {
+  left: 0 !important;
+  transform: scale(1) !important;
+  right: initial !important;
+}
+
+// .menu.gearMenu {
+//   // fix hebrew position
+//   left: 410px;
+// }
+.menu.gearMenu> :nth-child(2) {
+  // background:blue;
+  // padding:3px;
+  // outline:10px solid red;
+  position: absolute;
+  left: 0 !important;
+  right: auto !important;
+}
+
+.highlighted {
+  position: relative;
+}
+
+.highlighted > :last-child:not(.children) {
+  // position: absolute !important;
+  // direction: ltr;
+
+  /*   background:blue;
+outline:10px solid red; */
+  right: -20% !important;
+  left: initial !important;
+  // top: 0 !important;
+  // width: 100% !important;
+  // margin: 0 !important;
+  // padding: 0 !important;
+}
